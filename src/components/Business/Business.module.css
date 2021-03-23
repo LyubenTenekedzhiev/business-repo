@@ -1,0 +1,63 @@
+.Business {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: var(--fontColor-primary);
+  padding: 1.25rem 2.5rem;
+  margin: 0.25rem 0.3rem 0.25rem 0rem;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.Business:hover {
+  background: rgba(224, 224, 224, 0.534);
+}
+
+.Business_Nearby {
+  display: flex;
+  align-items: center;
+  background: rgba(224, 224, 224, 0.288);
+  color: var(--fontColor-primary);
+  padding: 1rem;
+  margin: 0.25rem 0.3rem 0.25rem 0rem;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.Business_Nearby:hover {
+  background: white;
+}
+
+.Business_Nearby_Name,
+.Business_Nearby_Description {
+  color: var(--fontColor-tertiary);
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 320px) {
+  .Business_Name,
+  .Business_Nearby_Name {
+    width: 35%;
+  }
+  .Business_Description {
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 65%;
+  }
+}
+@media (min-width: 1024px) {
+  .Business_Name,
+  .Business_Nearby_Name {
+    width: 25%;
+  }
+  .Business_Description {
+    width: 75%;
+  }
+}

@@ -1,0 +1,127 @@
+.BusinessDetails {
+  margin: 0 auto;
+}
+
+.BusinessDetails_Image {
+  width: 100%;
+  max-height: 25rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.BusinessDetails_Info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.BusinessDetails_Info_Address,
+.BusinessDetails_Info_Contact,
+.BusinessDetails_Info_NearbyPlaces {
+  padding: 1.75rem;
+}
+
+.BusinessDetails_Info_NearbyPlaces {
+  background-color: white;
+}
+
+.BusinessDetails_Info_Address h1,
+.BusinessDetails_Info_Contact h1,
+.BusinessDetails_Info_NearbyPlaces h1 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.BusinessDetails_Info_Address p,
+.BusinessDetails_Info_Contact p,
+.BusinessDetails_Info_NearbyPlaces p {
+  color: var(--fontColor-tertiary);
+}
+
+.BusinessDetails_Info_Address p,
+.BusinessDetails_Info_Contact p {
+  margin-bottom: 0.5rem;
+}
+
+.BusinessDetails_Info_PaginationWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.BusinessDetails_Info_Pagination > span:hover {
+  background: rgba(238, 238, 238, 0.733);
+}
+.BusinessDetails_Info_Pagination > span:first-of-type,
+.BusinessDetails_Info_Pagination > span:last-of-type {
+  border: 0.02rem solid rgba(0, 0, 0, 0.15);
+  padding: 0.5rem 1.5rem;
+  margin: 0;
+  cursor: pointer;
+  font-size: 1.25rem;
+  border-radius: 0.4rem 0 0 0.4rem;
+  transition: 0.3s all;
+}
+.BusinessDetails_Info_Pagination > span:last-of-type {
+  border-radius: 0 0.4rem 0.4rem 0;
+  border-left: none;
+}
+
+@media (min-width: 320px) {
+  .BusinessDetails {
+    width: 95vw;
+    padding: 2.5rem 0rem;
+  }
+  .BusinessDetails_Info {
+    flex-direction: column;
+  }
+  .BusinessDetails_Info {
+    width: 90vw;
+    margin-top: 1rem;
+  }
+  .BusinessDetails_Info_NearbyPlaces {
+    width: 100%;
+  }
+  .BusinessDetails_Info_Address h1,
+  .BusinessDetails_Info_Contact h1,
+  .BusinessDetails_Info_NearbyPlaces h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .BusinessDetails_Info_Pagination > span:first-of-type,
+  .BusinessDetails_Info_Pagination > span:last-of-type {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .BusinessDetails_Info_Address h1,
+  .BusinessDetails_Info_Contact h1,
+  .BusinessDetails_Info_NearbyPlaces h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+  .BusinessDetails_Info_Pagination > span:first-of-type,
+  .BusinessDetails_Info_Pagination > span:last-of-type {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  .BusinessDetails_Info {
+    flex-direction: row;
+  }
+  .BusinessDetails_Info {
+    margin-top: 2rem;
+  }
+  .BusinessDetails_Info_NearbyPlaces {
+    width: 50%;
+  }
+}
+@media (min-width: 1440px) {
+  .BusinessDetails {
+    width: 90vw;
+    padding: 4rem 0rem;
+  }
+  .BusinessDetails_Info {
+    width: 80vw;
+  }
+}

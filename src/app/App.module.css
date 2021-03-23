@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --fontColor-primary: rgb(63, 63, 63);
+  --fontColor-secondary: rgb(197, 68, 122);
+  --fontColor-tertiary: rgb(114, 114, 114);
+}
+
+.App {
+  background: rgba(236, 236, 236, 0.493);
+  min-height: 100vh;
+}
+
+@media (min-width: 320px) {
+  :root {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 425px) {
+  :root {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1024px) {
+  :root {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 2000px) {
+  :root {
+    font-size: 1.75rem;
+  }
+}

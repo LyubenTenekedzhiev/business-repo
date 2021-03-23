@@ -1,0 +1,18 @@
+.Navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0rem;
+  text-transform: uppercase;
+  background-color: white;
+  box-shadow: 0.08rem 0.4rem 0.4rem -0.4rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0.08rem 0.4rem 0.4rem -0.4rem rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0.08rem 0.4rem 0.4rem -0.4rem rgba(0, 0, 0, 0.15);
+}
+
+.NavigationLink {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--fontColor-primary);
+}

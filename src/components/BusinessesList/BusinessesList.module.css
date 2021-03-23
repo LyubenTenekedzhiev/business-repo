@@ -1,0 +1,65 @@
+.BusinessesWrapper {
+  position: relative;
+  width: 90vw;
+  max-height: 75vh;
+  min-height: 60vh;
+  margin: 5rem auto;
+  overflow-y: scroll;
+}
+
+.BusinessWrapper_Header {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: var(--fontColor-secondary);
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  padding: 1.25rem 2.5rem;
+  margin-right: 0.3rem;
+}
+
+.BusinessWrapper_Header_Name,
+.BusinessWrapper_Header_Description {
+  width: 25%;
+  font-weight: 800;
+}
+
+/* Sidebar */
+.BusinessesWrapper::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.BusinessesWrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(169, 169, 169, 0.76);
+  border-radius: 0.75rem;
+}
+
+.BusinessesWrapper_NoResults {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 320px) {
+  .BusinessesWrapper {
+    width: 95vw;
+    max-height: 85vh;
+    margin: 3rem auto;
+  }
+  .BusinessWrapper_Header_Name,
+  .BusinessWrapper_Header_Description {
+    width: 35%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .BusinessesWrapper {
+    width: 90vw;
+    max-height: 75vh;
+    margin: 5rem auto;
+  }
+  .BusinessWrapper_Header_Name,
+  .BusinessWrapper_Header_Description {
+    width: 25%;
+  }
+}

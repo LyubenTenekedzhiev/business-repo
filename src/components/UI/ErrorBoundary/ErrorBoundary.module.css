@@ -1,0 +1,11 @@
+.ErrorBoundary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100vw;
+}
+
+.ErrorBoundary p {
+  font-size: 2rem;
+}
