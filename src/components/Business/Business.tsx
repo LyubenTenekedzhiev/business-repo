@@ -10,7 +10,7 @@ interface Props extends BusinessInterface {
 const Business = ({ name, description, address, clicked }: Props) => {
   return (
     <>
-      {window.location.href === "https://dev-ocean.netlify.app/" ? (
+      {window.location.href === "https://dev-ocean.netlify.app/" || window.location.href === "http://localhost:3000/" ? (
         <div className={classes.Business} onClick={clicked}>
           <h4 className={classes.Business_Name}>{name}</h4>
           <h4 className={classes.Business_Description}>{description}</h4>
